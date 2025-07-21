@@ -1,5 +1,5 @@
 {
-  "name": "react-native-render-html",
+  "name": "@techtime/react-native-render-html",
   "version": "6.3.4",
   "author": "Meliorence <contact@meliorence.com> (github.com/meliorence)",
   "license": "BSD-2-Clause",
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/meliorence/react-native-render-html.git",
+    "url": "https://github.com/ideematic/react-native-render-html.git",
     "directory": "packages/render-html"
   },
   "scripts": {
@@ -35,7 +35,8 @@
     "test:lint": "eslint --ext ts,tsx src/",
     "build": "bob build",
     "build:defs": "api-extractor run --local --verbose",
-    "prepack": "yarn run prepack:readme && yarn run build",
+    "prepack": "yarn run build",
+    "prepack:full": "yarn run prepack:readme && yarn run build",
     "prepack:readme": "./scripts/prepack.sh"
   },
   "devDependencies": {
